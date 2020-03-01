@@ -1,4 +1,4 @@
-# Future Sales Forecast with TensorFlow
+# Future Sales Forecast with Prophet
 The task is to forecast the total amount of products sold in every shop for the test set.
 
 ## Data Description
