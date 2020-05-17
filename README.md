@@ -1,24 +1,21 @@
-# Future Sales Forecast with Prophet
-The task is to forecast the total amount of products sold in every shop for the test set.
+# Previsão de Vendas com Prophet
+Utilizando a biblioteca para construção de séries temporais do _Facebook_ – denominada _Prophet_,
+pretende-se elaborar um modelo, que seja capaz de prever os próximos 5 meses de vendas e receita da empresa.
 
-## Data Description
+## Descrição dos Dados
 
-### File descriptions
-* **sales_train.csv** - the training set. Daily historical data from January 2013 to October 2015.
-* **test.csv** - the test set. You need to forecast the sales for these shops and products for November 2015.
-* **items.csv** - supplemental information about the items/products.
-* **item_categories.csv**  - supplemental information about the items categories.
-* **shops.csv**- supplemental information about the shops.
+### Arquivos
+* **sales.csv** - Dados históricos (vendas diárias) de Janeiro de 2013 a Outubro de 2015;
+* **items.csv** - Informações complementares sobre os itens/produtos;
+* **item_categories.csv**  - Informações complementares sobre as categorias de itens.
 
-### Data fields
-* **ID** - an Id that represents a (Shop, Item) tuple within the test set
-* **shop_id** - unique identifier of a shop
-* **item_id** - unique identifier of a product
-* **item_category_id** - unique identifier of item category
-* **item_cnt_day** - number of products sold. You are predicting a monthly amount of this measure
-* **item_price** - current price of an item
-* **date** - date in format dd/mm/yyyy
-* **date_block_num** - a consecutive month number, used for convenience. January 2013 is 0, February 2013 is 1,..., October 2015 is 33
-* **item_name** - name of item
-* **shop_name** - name of shop
-* **item_category_name** - name of item category
+### Campos
+* **shop_id** - Identificador da loja;
+* **item_id** - Identificador do produto;
+* **item_category_id** - Identificador da categoria do produto;
+* **item_cnt_day** - Quantidade de produtos vendidos;
+* **item_price** - Preço do produto;
+* **date** - Data no formato “dd.mm.YYYY”;
+* **date_block_num** - Número sequencial dos meses entre Janeiro de 2013 (0) e Outubro de 2015 (33);
+* **item_name** - Nome do produto;
+* **item_category_name** - Nome da categoria do produto.
